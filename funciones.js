@@ -6,7 +6,7 @@ const guardar_Contacto = (db, contacto) => {
         db.setItem(contacto.id, JSON.stringify(contacto))
             //accediendo al objeto window del dom para
             //redireccion forzada a la raiz del proyecto
-        window.location.href = 'https://judom19.github.io/agenda_contactos'
+        window.location.href = '/'
     }
     // CARGANDO CONTACTOS DESDE EL LOCAL STORAGE
 const cargar_Contactos = (db, parentNode) => {
@@ -35,7 +35,7 @@ const crearContacto = (parentNode, contacto, db) => {
     iconoBorrar.classList.add('material-icons', 'icono')
     iconoBorrar.onclick = () => {
         db.removeItem(contacto.id)
-        https://judom19.github.io/agenda_contactos
+        window.location.href = '/'
     }
     divContacto.appendChild(nombreContacto)
     divContacto.appendChild(numeroContacto)
