@@ -35,7 +35,7 @@ const crearContacto = (parentNode, contacto, db) => {
     iconoBorrar.classList.add('material-icons', 'icono')
     iconoBorrar.onclick = () => {
         db.removeItem(contacto.id)
-        window.location.href = 'https://judom19.github.io/agenda_contactos'
+        https://judom19.github.io/agenda_contactos
     }
     divContacto.appendChild(nombreContacto)
     divContacto.appendChild(numeroContacto)
