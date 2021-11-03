@@ -6,7 +6,7 @@ const guardar_Contacto = (db, contacto) => {
         db.setItem(contacto.id, JSON.stringify(contacto))
             //accediendo al objeto window del dom para
             //redireccion forzada a la raiz del proyecto
-        window.location.href = '/'
+        window.location="index.html"
     }
     // CARGANDO CONTACTOS DESDE EL LOCAL STORAGE
 const cargar_Contactos = (db, parentNode) => {
